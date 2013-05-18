@@ -22,29 +22,23 @@
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"/>
 
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBox x:Name="txtToTrans" HorizontalAlignment="Left" Height="72" 
+            <TextBox x:Name="txtToTrans" HorizontalAlignment="Left" Height="167" 
                  TextWrapping="Wrap" VerticalAlignment="Top" Width="446" 
-                 AcceptsReturn="True"/>
-            <Button Content="Translate" HorizontalAlignment="Left" Margin="10,131,0,0" 
+                 AcceptsReturn="True" Margin="0,38,0,0"/>
+            <Button Content="Translate" HorizontalAlignment="Left" Margin="10,581,0,0" 
                 VerticalAlignment="Top" Width="436" Click="Button_Click_1"/>
-            <RadioButton x:Name="optFrench" Content="French" HorizontalAlignment="Left" 
-                Margin="10,59,0,0" VerticalAlignment="Top" IsChecked="True" 
-                Checked="optFrench_Checked"/>
-            <RadioButton x:Name="optSpanish" Content="Spanish" HorizontalAlignment="Left" 
-                     Margin="150,59,0,0" VerticalAlignment="Top" 
-                     Checked="optSpanish_Checked"/>
-            <RadioButton x:Name="optGerman" Content="German" HorizontalAlignment="Left" 
-                     Margin="296,59,0,0" VerticalAlignment="Top" 
-                     Checked="optGerman_Checked"/>
-            <TextBlock HorizontalAlignment="Left" Height="31" Margin="28,208,0,0" 
+            <TextBlock HorizontalAlignment="Left" Height="31" Margin="19,210,0,0" 
                    TextWrapping="Wrap" Text="Translation:" VerticalAlignment="Top" 
-                   Width="117"/>
-            <TextBlock x:Name="lblTranslatedText" HorizontalAlignment="Left" Height="208" 
-                   Margin="28,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
-                   Width="402"/>
+                   Width="117" FontFamily="Segoe UI"/>
+            <TextBlock x:Name="lblTranslatedText" HorizontalAlignment="Left" Height="268" 
+                   Margin="19,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
+                   Width="402" FontSize="40"/>
             <Button x:Name="btnSpeak" Content="Speak" HorizontalAlignment="Left" 
-                Margin="28,487,0,0" VerticalAlignment="Top" Width="402" 
+                Margin="28,641,0,0" VerticalAlignment="Top" Width="402" 
                 Click="btnSpeak_Click"/>
+            <RadioButton x:Name="klingon" Content="Klingon" HorizontalAlignment="Left" Margin="28,514,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.207,-0.028" Checked="klingon_Checked" IsChecked="True"/>
+            <RadioButton x:Name="kronos" Content="Kronos" HorizontalAlignment="Left" Margin="283,514,0,0" VerticalAlignment="Top" Checked="kronos_Checked"/>
+            <TextBlock HorizontalAlignment="Left" Margin="19,11,0,0" TextWrapping="Wrap" Text="English:" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>

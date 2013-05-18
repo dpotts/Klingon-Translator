@@ -26,7 +26,6 @@ C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translat
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Klingon Translator.dll
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Klingon Translator.pdb
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\AppManifest.xaml
-C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Properties\WMAppManifest.xml
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Klingon_Translator_Debug_AnyCPU.xap
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Debug\App.g.cs
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Debug\MainPage.g.cs

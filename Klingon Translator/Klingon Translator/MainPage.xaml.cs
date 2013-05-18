@@ -9,21 +9,19 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Klingon_Translator.Resources;
 using System.Text;
-using System.Threading.Tasks;
+using Windows.Phone.Speech.Synthesis;
+using System.Windows.Media;
 
 namespace Klingon_Translator {
 
     public partial class MainPage : PhoneApplicationPage {
 
-        string strLngTo = "fr";
+        //string strLngTo = "tlh-QON";
         private static string strTextToTranslate = "";
 
         // Constructor
         public MainPage() {
-
             InitializeComponent();
-            // Sample code to localize the ApplicationBar
-            //BuildLocalizedApplicationBar();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) {
@@ -43,19 +41,6 @@ namespace Klingon_Translator {
               (IAsyncResult)req.BeginGetRequestStream(new AsyncCallback(RequestStreamReady), req);
 
         }
-
-        private void optFrench_Checked(object sender, RoutedEventArgs e) {
-            strLngTo = "fr";
-        }
-
-        private void optSpanish_Checked(object sender, RoutedEventArgs e) {
-            strLngTo = "es";
-        }
-
-        private void optGerman_Checked(object sender, RoutedEventArgs e) {
-            strLngTo = "de";
-        }
-
 
         private void RequestStreamReady(IAsyncResult ar) {
             // STEP 2: The request stream is ready. Write the request into the POST stream
@@ -93,7 +78,7 @@ namespace Klingon_Translator {
                 AdmAccessToken token =
                   (AdmAccessToken)serializer.ReadObject(response.GetResponseStream());
 
-                string uri = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=" + System.Net.HttpUtility.UrlEncode(strTextToTranslate) + "&from=en&to=" + strLngTo;
+                string uri = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=" + System.Net.HttpUtility.UrlEncode(strTextToTranslate) + "&from=en&to=tlh";
                 System.Net.WebRequest translationWebRequest = System.Net.HttpWebRequest.Create(uri);
                 // The authorization header needs to be "Bearer" + " " + the access token
                 string headerValue = "Bearer " + token.access_token;
@@ -122,28 +107,38 @@ namespace Klingon_Translator {
               System.Xml.Linq.XDocument.Parse(responseString);
             string strTest = xTranslation.Root.FirstNode.ToString();
             // We're not on the UI thread, so use the dispatcher to update the UI
+            Deployment.Current.Dispatcher.BeginInvoke(() => lblTranslatedText.FontSize = 40);
             Deployment.Current.Dispatcher.BeginInvoke(() => lblTranslatedText.Text = strTest);
 
         }
 
-        private void btnSpeak_Click(object sender, RoutedEventArgs e) {
+        private async void btnSpeak_Click(object sender, RoutedEventArgs e)
+        {
+            string filterLanguage = "fr-FR";
+            SpeechSynthesizer speech = new SpeechSynthesizer();
+
+            // Query for a voice that speaks French.
+            IEnumerable<VoiceInformation> voices = from voice in InstalledVoices.All
+                                                   where voice.Language == filterLanguage
+                                                   select voice;
+
+            // Set the voice as identified by the query.
+            speech.SetVoice(voices.ElementAt(0));
+
+            // Count in French.
+            await speech.SpeakTextAsync(lblTranslatedText.Text);
+
 
         }
 
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
+        private void kronos_Checked(object sender, RoutedEventArgs e)
+        {
+            Deployment.Current.Dispatcher.BeginInvoke(() => lblTranslatedText.FontFamily = new FontFamily("/Klingon Translator;component/Assets/klingon font.ttf#klingon font"));
+        }
 
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
-
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
+        private void klingon_Checked(object sender, RoutedEventArgs e)
+        {
+            Deployment.Current.Dispatcher.BeginInvoke(() => lblTranslatedText.FontFamily = new FontFamily("Segoe WP"));
+        }
     }
 }
