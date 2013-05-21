@@ -17,12 +17,6 @@ c:\users\daniel\documents\visual studio 2012\Projects\Klingon Translator\Klingon
 c:\users\daniel\documents\visual studio 2012\Projects\Klingon Translator\Klingon Translator\obj\Debug\Klingon Translator.dll
 c:\users\daniel\documents\visual studio 2012\Projects\Klingon Translator\Klingon Translator\obj\Debug\Klingon Translator.pdb
 c:\users\daniel\documents\visual studio 2012\Projects\Klingon Translator\Klingon Translator\obj\Debug\XapCacheFile.xml
-C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Assets\ApplicationIcon.png
-C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
-C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
-C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
-C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
-C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Assets\Tiles\IconicTileSmall.png
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Klingon Translator.dll
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\Klingon Translator.pdb
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Debug\AppManifest.xaml
@@ -35,3 +29,4 @@ C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translat
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Debug\Klingon Translator.dll
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Debug\Klingon Translator.pdb
 C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Debug\XapCacheFile.xml
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Debug\Translator.g.cs

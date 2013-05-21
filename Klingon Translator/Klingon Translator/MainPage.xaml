@@ -21,24 +21,21 @@
 
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"/>
 
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBox x:Name="txtToTrans" HorizontalAlignment="Left" Height="167" 
-                 TextWrapping="Wrap" VerticalAlignment="Top" Width="446" 
-                 AcceptsReturn="True" Margin="0,38,0,0"/>
-            <Button Content="Translate" HorizontalAlignment="Left" Margin="10,581,0,0" 
-                VerticalAlignment="Top" Width="436" Click="Button_Click_1"/>
-            <TextBlock HorizontalAlignment="Left" Height="31" Margin="19,210,0,0" 
-                   TextWrapping="Wrap" Text="Translation:" VerticalAlignment="Top" 
-                   Width="117" FontFamily="Segoe UI"/>
-            <TextBlock x:Name="lblTranslatedText" HorizontalAlignment="Left" Height="268" 
-                   Margin="19,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" 
-                   Width="402" FontSize="40"/>
-            <Button x:Name="btnSpeak" Content="Speak" HorizontalAlignment="Left" 
-                Margin="28,641,0,0" VerticalAlignment="Top" Width="402" 
-                Click="btnSpeak_Click"/>
-            <RadioButton x:Name="klingon" Content="Klingon" HorizontalAlignment="Left" Margin="28,514,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.207,-0.028" Checked="klingon_Checked" IsChecked="True"/>
-            <RadioButton x:Name="kronos" Content="Kronos" HorizontalAlignment="Left" Margin="283,514,0,0" VerticalAlignment="Top" Checked="kronos_Checked"/>
-            <TextBlock HorizontalAlignment="Left" Margin="19,11,0,0" TextWrapping="Wrap" Text="English:" VerticalAlignment="Top"/>
+        <Grid x:Name="ContentPanel" Margin="10,10,14,0" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="167*"/>
+                <ColumnDefinition Width="289*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="en2kl" Content="English -&gt; Klingon" HorizontalAlignment="Left" Margin="10,581,0,0" 
+                VerticalAlignment="Top" Width="436" Click="en2kl_Click" Grid.ColumnSpan="2"/>
+            <Button x:Name="kl2en" Content="Klingon -&gt; English" HorizontalAlignment="Left" 
+                Margin="10,641,0,0" VerticalAlignment="Top" Width="436" 
+                Click="kl2en_Click" Grid.ColumnSpan="2"/>
+            <Image HorizontalAlignment="Left" Height="405" Margin="47,147,0,0" VerticalAlignment="Top" Width="365" Source="/Assets/Icon_202_202.png" Grid.ColumnSpan="2"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="436" Height="106" FontSize="52">
+            	<Run Text="Klingon "/>
+            	<Run Text="Translator"/>
+            </TextBlock>
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>

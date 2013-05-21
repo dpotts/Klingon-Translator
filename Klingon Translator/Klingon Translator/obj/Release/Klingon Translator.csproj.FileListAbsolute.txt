@@ -1,0 +1,13 @@
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Release\Klingon Translator.dll
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Release\Klingon Translator.pdb
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Release\AppManifest.xaml
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\Bin\Release\Klingon_Translator_Release_AnyCPU.xap
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Release\App.g.cs
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Release\Translator.g.cs
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Release\MainPage.g.cs
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Release\Klingon Translator.g.resources
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Release\Klingon_Translator.Resources.AppResources.resources
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Release\Klingon Translator.csproj.GenerateResource.Cache
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Release\Klingon Translator.dll
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Release\Klingon Translator.pdb
+C:\Users\Daniel\Documents\Klingon-Translator\Klingon Translator\Klingon Translator\obj\Release\XapCacheFile.xml

@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{3638f94a-d97f-442d-9bce-e56ce81078a8}" Title="Klingon_Translator" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Klingon_Translator author" Description="Sample description" Publisher="Klingon_Translator" PublisherID="{9953615e-77a2-4a5f-9a9c-00cbdfb3d96c}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+  <App xmlns="" ProductID="{3638f94a-d97f-442d-9bce-e56ce81078a8}" Title="Klingon Translator" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Daniel Potts" Description="The Klingon Translator app allows you to translate from English to Klingon and as well as from Klingon to English.  You can also view the Klingon in Kronos (Qo'noS), the native Klingon alphabet." Publisher="Daniel Potts" PublisherID="{9953615e-77a2-4a5f-9a9c-00cbdfb3d96c}">
+    <IconPath IsRelative="true" IsResource="false">Assets\Icon_100_100.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
       <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
       <Capability Name="ID_CAP_SENSORS" />
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
-      <Capability Name="ID_CAP_SPEECH_RECOGNITION" />
     </Capabilities>
     <Tasks>
       <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
@@ -17,20 +16,19 @@
     <Tokens>
       <PrimaryToken TokenID="Klingon_TranslatorToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Icon_110_110.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>Klingon_Translator</Title>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Icon_202_202.png</BackgroundImageURI>
+          <Title>Klingon Translator</Title>
           <BackContent>
           </BackContent>
-          <BackBackgroundImageURI>
+          <BackBackgroundImageURI IsRelative="true" IsResource="false">
           </BackBackgroundImageURI>
           <BackTitle>
           </BackTitle>
-          <DeviceLockImageURI>
+          <DeviceLockImageURI IsRelative="true" IsResource="false">
           </DeviceLockImageURI>
-          <HasLarge>
-          </HasLarge>
+          <HasLarge>false</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>
